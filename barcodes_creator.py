@@ -26,7 +26,7 @@ def barcode_build(employee_name, employee_code, barcode_folder):
 
 def getting_codes():
 
-    key_api = 'spbdxdqepugjhgeh4kbrn6t2sz7jfytm'
+    key_api = os.environ.get('TimeStationKey')
 
     def get_data(out_file, code=37):
         #  this is preconfigure for current employee status  for the whole company
